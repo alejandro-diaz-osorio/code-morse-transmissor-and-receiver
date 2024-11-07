@@ -76,3 +76,4 @@ El proyecto demostró la viabilidad de utilizar luz como medio para transmitir d
 4. Grupostop. (2024). "Qué es un diodo láser y cómo funciona".
 5. REPOSITORIO ACADÉMICO DIGITAL. (2024). "Resistor / resistencia".
 6. TodoMaker. (2024). "CONOCIENDO AL ESP32".
+7. Instructable. (2017). "Morse Code Communication Transmitter and Receiver"
