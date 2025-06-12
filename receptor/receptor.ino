@@ -4,6 +4,7 @@ int a, f;                 // flags
 
 void setup() {
   Serial.begin(115200);  //sets serial port for communication
+  Serial.println("Listo para escuchar");
 }
 void loop() {
 
@@ -37,10 +38,10 @@ void loop() {
     Serial.print("D");
   }
   if (a == 1 && f == 13) {
-    Serial.print("E");
+    Serial.print("I");
   }
   if (a == 2 && f == 12) {
-    Serial.print("I");
+    Serial.print("E");
   }
   if (a == 10 && f == 4) {
     Serial.print("J");

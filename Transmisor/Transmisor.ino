@@ -6,8 +6,8 @@ const int pinLaser = 5;       // Pin donde se conecta el láser
 const int dotDuration = 200;  // Duración del punto en milisegundos
 
 // Configuración de red
-const char* ssid = "WIFI-UCP";  // Cambia por tu SSID
-const char* password = "";      // Cambia por tu contraseña
+const char *ssid = "";      //  Cambia por tu SSID
+const char *password = "";  //  Cambia por tu contraseña
 
 // Crear un objeto WebServer en el puerto 80
 WebServer server(80);
@@ -18,7 +18,7 @@ std::map<char, String> morseCode = {
 };
 
 // Función para enviar código Morse
-void enviarMorse(const char* mensaje) {
+void enviarMorse(const char *mensaje) {
   Serial.print("Acabas de mandar el siguiente mensaje: '");
 
   // Imprimir el mensaje con espacios entre letras
@@ -110,9 +110,10 @@ void setup() {
 
   // Conectar a la red Wi-Fi
   WiFi.begin(ssid, password);
+  Serial.println("Conectando a WiFi...");
   while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
-    Serial.println("Conectando a WiFi...");
+    Serial.print(".");
   }
 
   Serial.println("Conectado a WiFi!");
